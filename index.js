@@ -86,7 +86,7 @@ async function run() {
 
         // purchase api
         app.get('/purchaseFood' , verifyToken,  async(req, res) => {
-            console.log(req.query.email)
+            console.log(req.query.email);
             // console.log('tok tok token', req.cookies.token);
             console.log('user in the valid token' , req.user);
             if(req.query.email !== req.user.email){
