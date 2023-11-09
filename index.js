@@ -92,7 +92,7 @@ async function run() {
             if(req.query.email !== req.user.email){
                 return res.status(403).send({message: 'Forbidden'})
             }
-            let query = {};
+            let query = {}
             if(req.query?.email){
                 query= {email: req.query.email}
             }
